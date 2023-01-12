@@ -1,0 +1,141 @@
+code html !!!!!!!!!!!!!!!!!!!!!!!!!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="choices">
+        <h2>computer choice</h2>
+        <h2 id="computer-choice"></h2>
+        <h2 id="result"></h2>
+        <h2 id="your-choice"></h2>
+        <h2 id="your-choice">Your choice</h2>
+    </div>
+
+    <div class="btn">
+        <button id="rock"> Rock </button>
+        <button id="paper"> Paper </button>
+        <button id="scissors"> Scissors </button>
+    </div>
+</body>
+</html>
+
+
+
+code css !!!!!!!!!!!!!!!!!!!!!!!!!!
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.choices{
+    width: 90%;
+    height: 90%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    text-shadow: 0 0 35px rgb(228, 231, 52);
+    font-family: 'Times New Roman', Times, serif;
+}
+#result{
+    color: rgb(30, 49, 219);
+    font-size: 3rem;
+    text-shadow: 0 0 10px rgb(30, 47, 207);
+}
+button{
+    width: 150px;
+    height: 50px;
+    background: rgb(226, 91, 154);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+button:hover{
+    color: rgb(209, 209, 209);
+    background: rgb(92, 10, 48);
+    box-shadow: 0 0 60px rgb(221, 75, 172);
+}
+
+
+code js !!!!!!!!!!!!!!!!!!!!!!!!!!
+const computerchoice = document.getElementById("computer-choice");
+const yourchoice = document.getElementById("your-choice");
+const resultgame = document.getElementById("result");
+let btn = document.querySelectorAll("button");
+let user;
+let computer;
+let result;
+
+btn.forEach((btns) => {
+    btns.addEventListener("click" , (e)=>{
+        if(e.target.id === "rock"){
+            user = "✊"
+        }
+        if(e.target.id === "paper"){
+            user = "✋"
+        }
+        if(e.target.id === "scissors"){
+            user = "✌"
+        }
+        yourchoice.innerHTML = user;
+        random();
+        getResult();
+    })
+    
+})
+
+function random() {
+    let randomnum = Math.floor(Math.random() * 3)+ 1  ;
+    if(randomnum === 1){
+        computer= "✊";
+    }
+    if(randomnum === 2){
+        computer= "✋";
+    }
+    if(randomnum === 3){
+        computer= "✌";
+    }
+    computerchoice.innerHTML = computer;
+}
+function getResult() {
+    if(computer === user){
+        result = "Its draw"
+    }
+    if(computer === "✊" && user ==="✋"){
+        result = "you win";
+    }
+    if(computer === "✊" && user ==="✌"){
+        result = "you lose";
+    }
+    if(computer === "✋" && user ==="✌"){
+        result = "you win";
+    }
+    if(computer === "✋" && user ==="✊"){
+        result = "you lose";
+    }
+    if(computer === "✌" && user ==="✊"){
+        result = "you win";
+    }
+    if(computer === "✌" && user ==="✋"){
+        result = "you lose";
+    }
+    resultgame.innerHTML = result;
+}
+
