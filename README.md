@@ -11,26 +11,8 @@ my first repositry
     <script src="https://kit.fontawesome.com/1142f72366.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="img/css2.css?family=Cormorant:ital,wght@1,300&family=Dancing+Script&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Spectral+SC:wght@200&display=swap" rel="stylesheet">
-    <style> @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=Dancing+Script&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Spectral+SC:wght@200&display=swap'); </style>
-</head>
-<body>
-    <nav class="navbar">
-        <div class="max-width">
-        <div class="logo"><a href="#">profile <span>site</span></a></div>
-        <ul class="menu">
-            <li><a href="#home"> Home</a></li>
-            <li><a href="#about"> About</a></li>
-            <li><a href="#skills"> Skills</a></li>
-            <li><a href="#contact"> Contact</a></li>
-        </ul>
-</div></nav>
-<section class="home" id="home">
-    <div class="max-width">
-        <div class="home-content">
-            <div class="text1">Hello, my name is</div>
-            <div class="text2">Shifaa Darweesh</div>
-            <div class="text3">frontend developer</div>
-            
+    <style> @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,300&family=Dancing+Script&family=Lobster&family=Pacifico&family=Permanent+Marker&family=Spectral+SC:wght@200&display=swap'); 
+    
             *{
     margin: 0;
     padding: 0;
@@ -343,7 +325,26 @@ section .title{
 }
 .link a:hover{
     color: crimson;
-}
+}</style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="max-width">
+        <div class="logo"><a href="#">profile <span>site</span></a></div>
+        <ul class="menu">
+            <li><a href="#home"> Home</a></li>
+            <li><a href="#about"> About</a></li>
+            <li><a href="#skills"> Skills</a></li>
+            <li><a href="#contact"> Contact</a></li>
+        </ul>
+</div></nav>
+<section class="home" id="home">
+    <div class="max-width">
+        <div class="home-content">
+            <div class="text1">Hello, my name is</div>
+            <div class="text2">Shifaa Darweesh</div>
+            <div class="text3">frontend developer</div>
+            
 footer{
     background-color: black;
     padding: 18px 35%;
