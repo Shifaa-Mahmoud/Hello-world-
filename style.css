@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+section{
+    padding: 100px 0;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    padding-bottom: 10px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    background-color: rgba(53, 53, 53, 0.938);
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 0 3px rgb(19, 19, 19);
+    z-index: 999;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a{
+    color: whitesmoke;
+    font-size: 35px;
+    font-weight: 600;
+}
+.logo span{
+    color: crimson;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: white;
+    font-size: 20px;
+    font-weight: 550;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+    color: crimson;
+}
+.home{
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+}
+.home img{
+    width: 550px;
+    height: 500px;
+    margin-left: 15%;
+    margin-top: 8%;
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+    display: flex;
+}
+.home .home-content .text1{
+    margin-top: 25%;
+    font-size: 27px;
+    font-family: 'Cormorant', serif;
+
+}
+.home .home-content .text2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 75px;
+    font-weight: 550;
+    margin-left: -3px;
+}
+.home .home-content .text3{
+    font-size: 25px;
+    margin: 5px 0;
+    color: rgb(185, 19, 19);
+}
+.home .home-content a{
+    display: inline-block;
+    background: rgb(95, 105, 255);
+    color: white;
+    font-size: 25px;
+    padding: 14px 36px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 2px solid rgb(95, 105, 255);
+    transition: all 0.8s ease;
+}
+.home .home-content a:hover{
+    font-weight: 500;
+    background-color: rgb(26, 37, 201);
+}
+.about .about-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .col-left{
+    width: 45%;
+}
+.about .col-right{
+    width: 55%;
+    padding: 0 60px;
+}
+.about .col-right .text{
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.about p{
+    font-size: 20px;
+}
+.about a{
+    display: inline-block;
+    background: crimson;
+    color: white;
+    font-size: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.8s ease;
+}
+.about a:hover{
+    font-weight: 500;
+    background-color: rgb(160, 14, 43);
+}
+.about .title{ 
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: crimson;
+}
+.about .about-content img{
+    height: 400px;
+    width:  450px;
+    object-fit: cover;
+    border-radius: 6px;
+    padding: 20px;
+}
+.skills .skill-content{
+    display: flex;
+}
+
+.skills .col-left{
+    width: 45%;
+    padding-right: 20px;
+}
+.skills .col-right{
+    width: 55%;
+    padding: 0 60px;
+}
+.skills .skill-content .text{
+    margin-top: 15px;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: rgb(168, 14, 45);
+}
+.skills .skill-content p{
+    font-size: 20px;
+}
+.skills .skill-content .col-right .bars{
+    margin-bottom: 45px;
+}
+.skills .skill-content .col-right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skill-content .col-right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skill-content .col-right .line{
+    position: relative;
+    margin: 5px 10px ;
+    height: 8px;
+    width: 100%;
+    background-color: lightgray;
+}
+.skills .skill-content .col-right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skill-content .col-right .html::before{
+    width: 90%;
+}
+.skills .skill-content .col-right .css::before{
+    width: 87%;
+}
+.skills .skill-content .col-right .js::before{
+    width: 75%;
+}
+
+.contact .contact-content{
+    display: flex;
+}
+.contact .contact-content .right{
+    padding-left: 10%;
+}
+.contact .contact-content .column{
+    width: 50%;
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+.contact .left a{
+    color: crimson;
+    font-weight: 550;
+}
+.contact .msg { 
+    margin-left: 10px;
+    font-size: 30px;
+    font-weight: 550;
+    margin-bottom: 30px;
+    color: crimson;
+}
+.contact .contact-content p{
+    text-align: justify;
+}
+.contact .contact-content .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .info i{
+    font-size: 25px;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: rgb(34, 33, 33);
+}
+.contact .contact-content .right .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .contact-content .right form .textarea{
+    height: 80px;
+}
+.contact .contact-content .right form .name , .email ,.subject , textarea{
+    margin-left: 10px;
+}
+.contact .contact-content .field .input{
+    height: 100%;
+    width: 100%;
+}
+.contact .contact-content form .field input ,.contact .contact-content form  textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+}
+.contact button{
+    display: inline-block;
+    background-color: rgb(255, 251, 252);
+    color: crimson;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.8s ease;
+}
+.contact button:hover{
+    font-weight: 500;
+    background: crimson;
+    color: white;
+}
+footer{
+    background-color: black;
+    padding: 18px 35%;
+    color: wheat;
+}
+footer span{
+    color: crimson;
+}
